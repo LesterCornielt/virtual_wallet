@@ -9,8 +9,19 @@ class RecipientCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xFF0D113A), // Even darker blue
+            Color(0xFF1A237E), // Darker blue
+          ],
+        ),
+        borderRadius: BorderRadius.circular(8.0), // Rounded corners
+      ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 36.0),
         child: Column(
@@ -21,7 +32,11 @@ class RecipientCard extends StatelessWidget {
               children: [
                 const Text(
                   '**** **** **** 0000',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
                 PopupMenuButton<String>(
                   onSelected: (value) {
@@ -57,7 +72,7 @@ class RecipientCard extends StatelessWidget {
             const SizedBox(height: 8),
             const Text(
               'Nombre del Destinatario CUP',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 16, color: Colors.white),
             ),
             // TODO: Add bank logo if necessary
           ],
