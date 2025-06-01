@@ -29,14 +29,18 @@ class AddRecipientPage extends StatelessWidget {
             TextFormField(
               decoration: InputDecoration(
                 labelText: 'Nombre',
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
               ),
             ),
             SizedBox(height: 16.0),
             TextFormField(
               decoration: InputDecoration(
                 labelText: 'Móvil',
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
               ),
               keyboardType: TextInputType.phone,
             ),
@@ -44,7 +48,9 @@ class AddRecipientPage extends StatelessWidget {
             TextFormField(
               decoration: InputDecoration(
                 labelText: 'Número de tarjeta',
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
               ),
               keyboardType: TextInputType.number,
             ),
@@ -52,7 +58,9 @@ class AddRecipientPage extends StatelessWidget {
             DropdownButtonFormField<String>(
               decoration: InputDecoration(
                 labelText: 'Moneda',
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
               ),
               items: const [
                 // Replace with actual currency list

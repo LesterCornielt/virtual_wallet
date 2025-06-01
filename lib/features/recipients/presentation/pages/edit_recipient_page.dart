@@ -31,7 +31,9 @@ class EditRecipientPage extends StatelessWidget {
               // TODO: Pre-fill with existing name
               decoration: InputDecoration(
                 labelText: 'Nombre',
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
               ),
             ),
             SizedBox(height: 16.0),
@@ -39,7 +41,9 @@ class EditRecipientPage extends StatelessWidget {
               // TODO: Pre-fill with existing phone number
               decoration: InputDecoration(
                 labelText: 'Móvil',
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
               ),
               keyboardType: TextInputType.phone,
             ),
@@ -48,7 +52,9 @@ class EditRecipientPage extends StatelessWidget {
               // TODO: Pre-fill with existing card number
               decoration: InputDecoration(
                 labelText: 'Número de tarjeta',
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
               ),
               keyboardType: TextInputType.number,
             ),
@@ -57,7 +63,9 @@ class EditRecipientPage extends StatelessWidget {
               // TODO: Pre-select existing currency
               decoration: InputDecoration(
                 labelText: 'Moneda',
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
               ),
               items: const [
                 // Replace with actual currency list
