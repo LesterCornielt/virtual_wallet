@@ -6,7 +6,22 @@ class AddRecipientPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Adicionar destinatario')),
+      appBar: AppBar(
+        leading: Padding(
+          padding: const EdgeInsets.only(right: 8),
+          child: IconButton(
+            icon: const Text(
+              '<',
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+            ),
+            onPressed: () => Navigator.pop(context),
+          ),
+        ),
+        title: const Text(
+          'Adicionar destinatario',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
