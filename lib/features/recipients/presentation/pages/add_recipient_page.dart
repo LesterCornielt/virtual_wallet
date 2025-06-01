@@ -26,50 +26,78 @@ class AddRecipientPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Nombre',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12.0),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Nombre',
+                  filled: true,
+                  fillColor: Colors.grey[100],
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
                 ),
               ),
             ),
             SizedBox(height: 16.0),
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Móvil',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12.0),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Móvil',
+                  filled: true,
+                  fillColor: Colors.grey[100],
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
                 ),
+                keyboardType: TextInputType.phone,
               ),
-              keyboardType: TextInputType.phone,
             ),
             SizedBox(height: 16.0),
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Número de tarjeta',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12.0),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Número de tarjeta',
+                  filled: true,
+                  fillColor: Colors.grey[100],
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
                 ),
+                keyboardType: TextInputType.number,
               ),
-              keyboardType: TextInputType.number,
             ),
             SizedBox(height: 16.0),
-            DropdownButtonFormField<String>(
-              decoration: InputDecoration(
-                labelText: 'Moneda',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12.0),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: DropdownButtonFormField<String>(
+                decoration: InputDecoration(
+                  labelText: 'Moneda',
+                  filled: true,
+                  fillColor: Colors.grey[100],
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
                 ),
+                items: const [
+                  // Replace with actual currency list
+                  DropdownMenuItem(value: 'CUP', child: Text('CUP')),
+                  DropdownMenuItem(value: 'USD', child: Text('USD')),
+                ],
+                onChanged: (value) {
+                  // TODO: Handle currency selection
+                },
               ),
-              items: const [
-                // Replace with actual currency list
-                DropdownMenuItem(value: 'CUP', child: Text('CUP')),
-                DropdownMenuItem(value: 'USD', child: Text('USD')),
-              ],
-              onChanged: (value) {
-                // TODO: Handle currency selection
-              },
             ),
             SizedBox(height: 24.0),
             ElevatedButton(
