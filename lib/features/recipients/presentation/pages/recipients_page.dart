@@ -20,7 +20,7 @@ class RecipientsPage extends StatelessWidget {
               '<',
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
-            onPressed: () => Navigator.pop(context),
+            onPressed: null,
           ),
         ),
         title: const Text(
