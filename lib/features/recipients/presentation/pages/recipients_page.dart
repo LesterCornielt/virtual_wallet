@@ -13,6 +13,10 @@ class RecipientsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: const IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: null,
+        ),
         title: const Text(
           'Destinatarios',
           style: TextStyle(fontWeight: FontWeight.bold),
@@ -27,7 +31,9 @@ class RecipientsPage extends StatelessWidget {
                 if (index == recipients.length) {
                   // This is the index for the button
                   return Padding(
-                    padding: const EdgeInsets.all(16.0).copyWith(top: 100.0),
+                    padding: const EdgeInsets.all(
+                      16.0,
+                    ).copyWith(top: 100.0, left: 56.0, right: 56.0),
                     child: GestureDetector(
                       onTap: () {
                         Navigator.push(
@@ -54,8 +60,8 @@ class RecipientsPage extends StatelessWidget {
                             Text(
                               'Adicionar destinatario',
                               style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.w800,
                               ),
                             ),
                           ],
@@ -65,47 +71,52 @@ class RecipientsPage extends StatelessWidget {
                   );
                 } else {
                   // Otherwise, build the recipient card
-                  return RecipientCard(
-                    onEdit: () {
-                      // Navigate to EditRecipientPage when Edit is selected
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const EditRecipientPage(),
-                        ),
-                      );
-                    },
-                    onDelete: () {
-                      // Show delete confirmation dialog
-                      showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            title: const Text('Confirmar eliminación'),
-                            content: const Text(
-                              '¿Estás seguro de que deseas eliminar este destinatario?',
-                            ),
-                            actions: <Widget>[
-                              TextButton(
-                                onPressed:
-                                    () =>
-                                        Navigator.of(
-                                          context,
-                                        ).pop(), // Dismiss dialog
-                                child: const Text('Cancelar'),
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 26.0),
+                    child: RecipientCard(
+                      onEdit: () {
+                        // Navigate to EditRecipientPage when Edit is selected
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const EditRecipientPage(),
+                          ),
+                        );
+                      },
+                      onDelete: () {
+                        // Show delete confirmation dialog
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Confirmar eliminación'),
+                              content: const Text(
+                                '¿Estás seguro de que deseas eliminar este destinatario?',
                               ),
-                              TextButton(
-                                onPressed: () {
-                                  // TODO: Implement actual delete logic using BLoC
-                                  Navigator.of(context).pop(); // Dismiss dialog
-                                },
-                                child: const Text('Eliminar'),
-                              ),
-                            ],
-                          );
-                        },
-                      );
-                    },
+                              actions: <Widget>[
+                                TextButton(
+                                  onPressed:
+                                      () =>
+                                          Navigator.of(
+                                            context,
+                                          ).pop(), // Dismiss dialog
+                                  child: const Text('Cancelar'),
+                                ),
+                                TextButton(
+                                  onPressed: () {
+                                    // TODO: Implement actual delete logic using BLoC
+                                    Navigator.of(
+                                      context,
+                                    ).pop(); // Dismiss dialog
+                                  },
+                                  child: const Text('Eliminar'),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      },
+                    ),
                   );
                 }
               },
