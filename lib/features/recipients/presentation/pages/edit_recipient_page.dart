@@ -58,13 +58,13 @@ class EditRecipientPage extends StatelessWidget {
               onPressed: () {
                 // TODO: Implement save changes logic
               },
-              child: const Text('Aceptar'),
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(
                   double.infinity,
                   50,
                 ), // Make button full width
               ),
+              child: const Text('Aceptar'),
             ),
           ],
         ),
