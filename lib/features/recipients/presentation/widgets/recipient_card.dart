@@ -51,7 +51,7 @@ class RecipientCard extends StatelessWidget {
               ],
             ),
             Positioned(
-              top: -22,
+              top: -18,
               right: -10,
               child: PopupMenuButton<String>(
                 icon: const Icon(
@@ -59,7 +59,7 @@ class RecipientCard extends StatelessWidget {
                   color: Colors.white,
                   size: 32,
                 ),
-                offset: const Offset(0, 32),
+                offset: const Offset(0, 10),
                 onSelected: (value) {
                   // Handle menu item selection (Edit or Delete)
                   if (value == 'edit') {
@@ -72,18 +72,24 @@ class RecipientCard extends StatelessWidget {
                 },
                 itemBuilder:
                     (BuildContext context) => <PopupMenuEntry<String>>[
-                      const PopupMenuItem<String>(
+                      PopupMenuItem<String>(
                         value: 'edit',
-                        child: ListTile(
-                          leading: Icon(Icons.edit),
-                          title: Text('Editar'),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text('Editar', style: TextStyle(fontSize: 14)),
+                            Icon(Icons.edit, size: 18),
+                          ],
                         ),
                       ),
-                      const PopupMenuItem<String>(
+                      PopupMenuItem<String>(
                         value: 'delete',
-                        child: ListTile(
-                          leading: Icon(Icons.delete),
-                          title: Text('Eliminar'),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text('Eliminar', style: TextStyle(fontSize: 14)),
+                            Icon(Icons.delete, size: 18),
+                          ],
                         ),
                       ),
                     ],
