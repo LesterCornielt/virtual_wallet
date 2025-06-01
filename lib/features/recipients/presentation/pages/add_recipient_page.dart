@@ -99,14 +99,14 @@ class AddRecipientPage extends StatelessWidget {
                 },
               ),
             ),
-            SizedBox(height: 24.0),
+            SizedBox(height: 64.0),
             ElevatedButton(
               onPressed: () {
                 // TODO: Implement save logic
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(
-                  0xFF0A3E8F,
+                  0xFF083A85,
                 ), // Slightly darker blue color
                 minimumSize: const Size(
                   double.infinity,
