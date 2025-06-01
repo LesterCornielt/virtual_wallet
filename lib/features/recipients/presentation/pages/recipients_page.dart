@@ -33,7 +33,7 @@ class RecipientsPage extends StatelessWidget {
                   return Padding(
                     padding: const EdgeInsets.all(
                       16.0,
-                    ).copyWith(top: 100.0, left: 56.0, right: 56.0),
+                    ).copyWith(top: 100.0, left: 46.0, right: 46.0),
                     child: GestureDetector(
                       onTap: () {
                         Navigator.push(
@@ -60,7 +60,7 @@ class RecipientsPage extends StatelessWidget {
                             Text(
                               'Adicionar destinatario',
                               style: TextStyle(
-                                fontSize: 18.0,
+                                fontSize: 20.0,
                                 fontWeight: FontWeight.w800,
                               ),
                             ),
@@ -72,7 +72,7 @@ class RecipientsPage extends StatelessWidget {
                 } else {
                   // Otherwise, build the recipient card
                   return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 26.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 46.0),
                     child: RecipientCard(
                       onEdit: () {
                         // Navigate to EditRecipientPage when Edit is selected
