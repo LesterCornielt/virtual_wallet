@@ -14,7 +14,7 @@ class RecipientsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const Padding(
-          padding: EdgeInsets.only(right: 0),
+          padding: EdgeInsets.only(right: 8),
           child: IconButton(
             icon: Text(
               '<',
@@ -32,6 +32,7 @@ class RecipientsPage extends StatelessWidget {
         children: [
           Expanded(
             child: ListView.builder(
+              padding: const EdgeInsets.only(top: 20.0),
               itemCount: recipients.length + 1, // Add 1 for the button
               itemBuilder: (context, index) {
                 if (index == recipients.length) {
