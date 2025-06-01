@@ -7,7 +7,22 @@ class EditRecipientPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Editar destinatario')),
+      appBar: AppBar(
+        leading: Padding(
+          padding: const EdgeInsets.only(right: 8),
+          child: IconButton(
+            icon: const Text(
+              '<',
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+            ),
+            onPressed: () => Navigator.pop(context),
+          ),
+        ),
+        title: const Text(
+          'Editar destinatario',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -59,12 +74,18 @@ class EditRecipientPage extends StatelessWidget {
                 // TODO: Implement save changes logic
               },
               style: ElevatedButton.styleFrom(
+                backgroundColor: Color(
+                  0xFF0A3E8F,
+                ), // Slightly darker blue color
                 minimumSize: const Size(
                   double.infinity,
                   50,
                 ), // Make button full width
               ),
-              child: const Text('Aceptar'),
+              child: const Text(
+                'Aceptar',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ],
         ),

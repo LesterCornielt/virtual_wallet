@@ -13,14 +13,14 @@ class RecipientsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Padding(
-          padding: EdgeInsets.only(right: 8),
+        leading: Padding(
+          padding: const EdgeInsets.only(right: 8),
           child: IconButton(
-            icon: Text(
+            icon: const Text(
               '<',
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
-            onPressed: null,
+            onPressed: () => Navigator.pop(context),
           ),
         ),
         title: const Text(

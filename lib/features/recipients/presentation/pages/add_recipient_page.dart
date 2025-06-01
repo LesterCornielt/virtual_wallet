@@ -69,12 +69,18 @@ class AddRecipientPage extends StatelessWidget {
                 // TODO: Implement save logic
               },
               style: ElevatedButton.styleFrom(
+                backgroundColor: Color(
+                  0xFF0A3E8F,
+                ), // Slightly darker blue color
                 minimumSize: const Size(
                   double.infinity,
                   50,
                 ), // Make button full width
               ),
-              child: const Text('Aceptar'),
+              child: const Text(
+                'Aceptar',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ],
         ),
