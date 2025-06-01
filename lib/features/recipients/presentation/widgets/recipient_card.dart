@@ -59,6 +59,7 @@ class RecipientCard extends StatelessWidget {
                   color: Colors.white,
                   size: 32,
                 ),
+                offset: const Offset(0, 32),
                 onSelected: (value) {
                   // Handle menu item selection (Edit or Delete)
                   if (value == 'edit') {
