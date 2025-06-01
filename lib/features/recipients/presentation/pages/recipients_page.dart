@@ -12,7 +12,12 @@ class RecipientsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Destinatarios')),
+      appBar: AppBar(
+        title: const Text(
+          'Destinatarios',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
       body: Column(
         children: [
           Expanded(
