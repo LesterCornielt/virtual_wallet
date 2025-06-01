@@ -13,9 +13,15 @@ class RecipientsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: null,
+        leading: const Padding(
+          padding: EdgeInsets.only(right: 0),
+          child: IconButton(
+            icon: Text(
+              '<',
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+            ),
+            onPressed: null,
+          ),
         ),
         title: const Text(
           'Destinatarios',
