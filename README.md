@@ -32,11 +32,6 @@ Este repositorio muestra el avance del estudiante **Lester Cornielt** de 2do añ
 - Validación de formularios
 - Funcionalidad para gestíón de la información de los formularios con BLoC
 
-## 📋 Requisitos Técnicos
-- Android Studio [Versión]
-- SDK [Versión]
-- [Otras dependencias si aplican]
-
 ## 🤝 Cómo Contribuir
 Las contribuciones son bienvenidas. Por favor:
 1. Haz fork del proyecto
