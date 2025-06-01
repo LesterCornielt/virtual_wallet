@@ -1,16 +1,47 @@
 # virtual_wallet
 
-A new Flutter project.
+# Gestión de Destinatarios - UI Implementada
 
-## Getting Started
+## 📌 Sobre el Proyecto
 
-This project is a starting point for a Flutter application.
+Este repositorio muestra el avance del estudiante **Lester Cornielt** de 2do año en la **Universidad de las Ciencias Informáticas (UCI)**. La aplicación se encuentra en desarrollo y actualmente cuenta con la implementación completa del diseño de interfaz de usuario para la sección "Destinatarios", lista para continuar con el desarrollo de las funcionalidades requeridas.
 
-A few resources to get you started if this is your first Flutter project:
+## 🖼️ Vista Previa de la Interfaz
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📱 Interfaz Actual
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="/screenshots/recipients_page.jpg" width="200" alt="Pantalla principal">
+  <img src="/screenshots/add_recipients_page.jpg" width="200" alt="Añadir destinatario">
+  <img src="/screenshots/edit_recipients_page.jpg" width="200" alt="Editar destinatario">
+  <img src="/screenshots/recipients_page_popup_menu.jpg" width="200" alt="PopUp Editar/Eliminar destinatario">
+</div>
+
+<details>
+<summary>🔍 Ver en tamaño completo (click)</summary>
+</details>
+
+## 🛠️ Estado Actual del Desarrollo
+
+✅ **Completado:**
+- Diseño e implementación completa de todas las pantallas de la sección Destinatarios
+- Flujo completo de navegación entre vistas
+- Maquetación de formularios con todos los campos requeridos
+
+🔜 **Próximos Pasos:**
+- Validación de formularios
+- Funcionalidad para gestíón de la información de los formularios con BLoC
+
+## 📋 Requisitos Técnicos
+- Android Studio [Versión]
+- SDK [Versión]
+- [Otras dependencias si aplican]
+
+## 🤝 Cómo Contribuir
+Las contribuciones son bienvenidas. Por favor:
+1. Haz fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
+3. Haz commit de tus cambios (`git commit -m 'Añade nueva funcionalidad'`)
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
