@@ -20,7 +20,7 @@ class RecipientCard extends StatelessWidget {
             Color(0xFF1A237E), // Darker blue
           ],
         ),
-        borderRadius: BorderRadius.circular(8.0), // Rounded corners
+        borderRadius: BorderRadius.circular(12.0), // Rounded corners
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 36.0),
