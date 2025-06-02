@@ -27,7 +27,7 @@ Este repositorio muestra el avance del estudiante **Lester Cornielt** de 2do añ
 - Diseño e implementación completa de todas las pantallas de la sección Destinatarios
 - Flujo completo de navegación entre vistas
 - Maquetación de formularios con todos los campos requeridos
-- Validación de formularios
+- Validación de formularios al presionar Aceptar se muestra mensajes de advertencia en campos obligatorios y sugerencias
 
 🔜 **Próximos Pasos:**
 - Funcionalidades CRUD para gestíón de los formularios
