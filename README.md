@@ -27,10 +27,11 @@ Este repositorio muestra el avance del estudiante **Lester Cornielt** de 2do añ
 - Diseño e implementación completa de todas las pantallas de la sección Destinatarios
 - Flujo completo de navegación entre vistas
 - Maquetación de formularios con todos los campos requeridos
+- Validación de formularios
 
 🔜 **Próximos Pasos:**
-- Validación de formularios
-- Funcionalidad para gestíón de la información de los formularios con BLoC
+- Funcionalidades CRUD para gestíón de los formularios
+- Manejo del estado con BLoC
 
 ## 🤝 Cómo Contribuir
 Las contribuciones son bienvenidas. Por favor:
